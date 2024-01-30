@@ -42,3 +42,4 @@ ___
 ### Options
 * `--card-size` is the number of rows and columns of the bingo cards used. Valid values are (no quotes): "3x3", "4x4", and "5x5". The default value is "5x5". This option cannot be used with the `--value-file` option.
 * `--value-file` is the path to a text file containing values that correspond to spaces of the players' bingo cards that will be spoken by the bingo caller. The format is one bingo card space value per line optionally prefixed by a column label. Example: 1, 2, ..., 74, 75 OR B::1, B::2, ..., N::74, N::75 (if using column labels). This option cannot be used with the `--card-size` option.
+* `--ignore-column` is an option to not use the column label (if one is used) when displaying the drawn values. This is useful if the players' bingo cards do not have column labels OR the cards were created using the `--scatter` option with `make_bingo_cards.py`.
